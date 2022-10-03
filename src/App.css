@@ -177,6 +177,12 @@ img {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+  }
 }
 
 /* medium devices */

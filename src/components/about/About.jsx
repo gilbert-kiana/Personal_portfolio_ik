@@ -4,8 +4,6 @@ import AboutImg from "../../assets/kaiser2.jpeg";
 import CV from "../../assets/John-Cv.pdf";
 import Info from "./Info";
 
-//1:01:46
-
 const About = () => {
   return (
     <section className="about section" id="about">

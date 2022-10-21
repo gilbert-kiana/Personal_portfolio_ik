@@ -31,6 +31,7 @@ const Testimonials = () => {
         }}
         modules={[Pagination]}
       >
+        {/* 2.23.20 */}
         {Data.map(({ id, image, title, description }) => {
           return (
             <SwiperSlide className="testimonial__card" key={id}>

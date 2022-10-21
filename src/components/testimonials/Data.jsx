@@ -1,4 +1,5 @@
 import Image1 from "../../assets/Kaiser.png";
+import Image2 from "../../assets/kaiser2.jpeg";
 
 export const Data = [
   {
@@ -9,7 +10,7 @@ export const Data = [
   },
   {
     id: 2,
-    image: Image1,
+    image: Image2,
     title: "kiana kaiser",
     description: "hii jina inanibamba",
   },

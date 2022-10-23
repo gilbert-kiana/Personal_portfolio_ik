@@ -40,7 +40,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
-
+        //comment to remind me where I have stopped
         <div className="contact__content">
           <h3 className="contact__title">Write me your project</h3>
           <form className="contact__form">

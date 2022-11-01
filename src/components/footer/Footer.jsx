@@ -26,7 +26,7 @@ const Footer = () => {
         <div className="footer__social">
           <a
             href="https://www.instagram.com/"
-            className="home__social-link"
+            className="footer__social-link"
             target="_blank"
           >
             <i class="bx bxl-instagram"></i>

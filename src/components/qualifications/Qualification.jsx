@@ -36,7 +36,6 @@ const Qualification = () => {
             onClick={() => toggleTab(2)}
           >
             <i className="uil uil-briefcase-alt qualification__icon"></i>
-            {""}
             Experience
           </div>
         </div>
@@ -77,6 +76,44 @@ const Qualification = () => {
                 <div className="qualification__calender">
                   <i className="uil uil-calender-alt"></i> 2022 - Present
                 </div>
+              </div>
+            </div>
+          </div>
+          <div
+            className={
+              toggleState === 2
+                ? "qualification__content qualification__content-active"
+                : "qualification__content"
+            }
+          >
+            <div className="qualification__data">
+              <div></div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
+              <div>
+                <h3 className="qualification__title">3D Artist</h3>
+                <span className="qualification__subtitle">Self Taught</span>
+                <div className="qualification__calender">
+                  <i className="uil uil-calender-alt"></i> 2022 - Present
+                </div>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div>
+                <h3 className="qualification__title">Artstation</h3>
+                <span className="qualification__subtitle">
+                  Dedan Kimathi University of Science and Technology
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calender-alt"></i> 2022 - Present
+                </div>
+              </div>
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
               </div>
             </div>
           </div>

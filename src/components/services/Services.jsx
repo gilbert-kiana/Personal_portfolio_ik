@@ -1,151 +1,139 @@
-import React,{useState} from "react";
+import React from "react";
 import "./services.css";
+import { BiCheck } from "react-icons/bi";
 
 const Services = () => {
-  const [toggleState,setToggleState] = useState(0)
-
-  const toggleTab = (index) => {
-    setToggleState(index);
-  }
   return (
-    <section className="services section" id="services">
-      <h2 className="section__title">Services</h2>
-      <span className="section__subtitle">What I offer</span>
-      <div className="services__container container grid">
-        <div className="services__content">
-          <div>
-            <i className="uil uil-web-grid services__icon"></i>
-            <h3 className="services__title">
-              Frontend <br /> Designer
-            </h3>
+    <section id="services">
+      <h5>What I offer</h5>
+      <h2>Services</h2>
+      <div className="container services__container">
+        <article className="service">
+          <div className="service__head">
+            <h3>UI/UX Design</h3>
           </div>
-          <span className="services__button" onClick={()=> toggleTab(1)}>
-            View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
-          <div className={toggleState === 1 ? "services__modal active-modal":"services__modal"}>
-            <div className="services__modal-content">
-              <i onClick={()=> toggleTab(0)} className="uil uil-times services__modal-close"></i>
-              <h3 className="services__modal-title">Frontend Design</h3>
-              <p className="services__modal-description">
-                Providing quality work to client
+          <ul className="service__list">
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
               </p>
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for people who want to start brands
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for institutions
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for business brands
-                  </p>
-                </li>
-              </ul>
-              <p className="services__modal"></p>
-            </div>
-          </div>
-        </div>
-
-        <div className="services__content">
-          <div>
-            <i className="uil uil-arrow services__icon"></i>
-            <h3 className="services__title">
-              Backend <br /> Designer
-            </h3>
-          </div>
-          <span onClick={()=> toggleTab(2)} className="services__button">
-            View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
-          <div className={toggleState === 2 ? "services__modal active-modal":"services__modal"}>
-            <div className="services__modal-content">
-              <i onClick={()=> toggleTab(0)} className="uil uil-times services__modal-close"></i>
-              <h3 className="services__modal-title">Backend Design</h3>
-              <p className="services__modal-description">
-                Providing quality work to client
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
               </p>
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for people who want to start brands
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for institutions
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for business brands
-                  </p>
-                </li>
-              </ul>
-              <p className="services__modal"></p>
-            </div>
-          </div>
-        </div>
-
-        <div className="services__content">
-          <div>
-            <i className="uil uil-edit services__icon"></i>
-            <h3 className="services__title">
-              Api <br /> Developer
-            </h3>
-          </div>
-          <span onClick={()=> toggleTab(3)} className="services__button">
-            View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
-          <div className={toggleState === 3 ? "services__modal active-modal":"services__modal"}> 
-            <div className="services__modal-content">
-              <i onClick={()=> toggleTab(0)} className="uil uil-times services__modal-close"></i>
-              <h3 className="services__modal-title">Fullstack developer</h3>
-              <p className="services__modal-description">
-                Providing quality work to client
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
               </p>
-              <ul className="services__modal-services grid">
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for people who want to start brands
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for institutions
-                  </p>
-                </li>
-
-                <li className="services__modal-service">
-                  <i className="uil uil-check-circle services__modal-icon"></i>
-                  <p className="services__modal-info">
-                    I create websites for business brands
-                  </p>
-                </li>
-              </ul>
-              <p className="services__modal"></p>
-            </div>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+          </ul>
+        </article>
+        {/* END OF UI/UX */}
+        <article className="service">
+          <div className="service__head">
+            <h3>Web Development</h3>
           </div>
-        </div>
+          <ul className="service__list">
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+          </ul>
+        </article>
+        {/* END OF WEB DEVELOPMENT */}
+        <article className="service">
+          <div className="service__head">
+            <h3>Content Creation</h3>
+          </div>
+          <ul className="service__list">
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur elit.
+              </p>
+            </li>
+          </ul>
+        </article>
+        {/* END OF CONTENT CREATION */}
       </div>
     </section>
   );

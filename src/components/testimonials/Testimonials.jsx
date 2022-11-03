@@ -1,46 +1,64 @@
 import React from "react";
 import "./testimonials.css";
-import { Data } from "./Data";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import { Pagination } from "swiper";
+import Avtr1 from "../../assets/avatar1.jpg";
+import Avtr2 from "../../assets/avatar2.jpg";
+import Avtr3 from "../../assets/avatar3.jpg";
+import Avtr4 from "../../assets/avatar4.jpg";
+// import Swiper core and required modules
+import {Pagination} from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
 
 const Testimonials = () => {
+  const data = [
+    {
+      avater: Avtr1,
+      name: "Zeltzin Liwen",
+      review:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate numquam, tenetur iste autem voluptatem expedita minima inventore facilis libero sit, accusantium modi adipisci? Ipsam, eaque! Nemo rem earum expedita minima.",
+    },
+    {
+      avater: Avtr2,
+      name: "Lihuén Ulloriaq",
+      review:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate numquam, tenetur iste autem voluptatem expedita minima inventore facilis libero sit, accusantium modi adipisci? Ipsam, eaque! Nemo rem earum expedita minima.",
+    },
+    {
+      avater: Avtr3,
+      name: "Michaiah Pemphero Durán",
+      review:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate numquam, tenetur iste autem voluptatem expedita minima inventore facilis libero sit, accusantium modi adipisci? Ipsam, eaque! Nemo rem earum expedita minima.",
+    },
+    {
+      avater: Avtr4,
+      name: "Feidlimid İlkay Abdullayev",
+      review:
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate numquam, tenetur iste autem voluptatem expedita minima inventore facilis libero sit, accusantium modi adipisci? Ipsam, eaque! Nemo rem earum expedita minima.",
+    }
+  ];
+
   return (
-    <section className="testimonial container section">
-      <h2 className="section__title">My clients say</h2>
-      <span className="section__subtitle">Testimonial</span>
-
-      <Swiper
-        className="testimonial__container"
-        loop={true}
-        grabCursor={true}
-        spaceBetween={24}
-        pagination={{
-          clickable: true,
-        }}
-        breakpoints={{
-          576: {
-            slidesPerView: 2,
-          },
-          768: {
-            slidesPerView: 2,
-            spaceBetween: 40,
-          },
-        }}
-        modules={[Pagination]}
+    <section id="testimonials">
+      <h5>Review from clients</h5>
+      <h2>Testimonials</h2>
+      <Swiper className="container testimonials__container"
+            modules={[Pagination]}
+            spaceBetween={40}
+            slidesPerView={1}
+            pagination={{ clickable: true }}
       >
-        {/* 2.23.20 */}
-        {Data.map(({ id, image, title, description }) => {
-          return (
-            <SwiperSlide className="testimonial__card" key={id}>
-              <img src={image} alt="" className="testimonial__img" />
-
-              <h3 className="testimonial__name">{title}</h3>
-              <p className="testimonial__description">{description}</p>
-            </SwiperSlide>
-          );
+        {data.map(({avater,name,review},index)=>{
+          return(
+            <SwiperSlide key={index} className="testimonial">
+            <div className="client__avatar">
+              <img src={avater} alt="client image" />
+            </div>
+            <h5 className="client__name">{name}</h5>
+            <small className="client__review">{review}</small>
+          </SwiperSlide>
+          )
         })}
       </Swiper>
     </section>

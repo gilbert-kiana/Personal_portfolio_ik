@@ -1,48 +1,54 @@
-.testimonial__container {
-  width: 750px;
+.container.testimonials__container{
+    width: 40%;
+    padding-bottom: 4rem;
 }
 
-.testimonial__card {
-  background-color: var(--container-color);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 1.5rem 2rem;
-  border-radius: 1.5rem;
-  margin-bottom: var(--mb-3);
+.client__avatar{
+    width: 4rem;
+    aspect-ratio: 1/1;
+    overflow: hidden;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    border: 0.4rem solid var(--color-primary-variant);
 }
 
-.testimonial__img {
-  width: 60px;
-  border-radius: 3rem;
-  margin-bottom: var(--mb-1);
+.testimonial{
+    background: var(--color-bg-variant);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 2rem;
+    user-select: none;
 }
 
-.testimonial__name {
-  font-size: var(--normal-font-size);
-  font-weight: var(--font-medium);
-  margin-bottom: var(--mb-0-25);
+.client__review{
+    color: var(--color-light);
+    font-weight: 300;
+    width: 80%;
+    display: block;
+    margin: 0.8rem auto 0;
 }
 
-.testimonial__description {
-  font-size: var(--small-font-size);
+.swiper-pagination-clickable .swiper-pagination-bullet{
+background: var(--color-primary);
 }
 
-/* Swiper Class */
-.swiper-pagination-bullet {
-  background-color: var(--text-color) !important;
+/*=============== MEDIA QUERIES ===============*/
+
+/*========== Medium devices ==========*/
+@media screen and (max-width:1024px) {
+    .container.testimonials__container{
+        width: 60%;
+    }
+    
 }
 
-.swiper-pagination-bullet-active {
-  background-color: var(--title-color) !important;
-}
+/*========== Small devices ==========*/
+@media screen and (max-width:600px) {
+    .container.testimonials__container{
+        width: var(--container-width-sm);
+    }
 
-/* BREAKPOINTS */
-/* For large devices */
-@media screen and (max-width: 992px) {
-  .testimonial__container {
-    width: initial;
-  }
-
-  .testimonial__card {
-    padding: 1.25rem 1.5rem;
-  }
+    .client__review{
+        width: var(--container-width-sm);
+    }
 }

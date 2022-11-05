@@ -51,18 +51,6 @@ header {
   overflow: hidden;
   padding: 0rem 0rem 0rem 0rem;
   z-index: -1;
-
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  box-shadow: inset 0 0 0 9px rgb(255 255 255/30%);
-  order: 1;
-  justify-self: center;
-  width: 300px;
-  margin-left: 400px;
-  margin-top: 50px;
-  height: 300px;
-  border-radius: 2rem; */
 }
 
 /*=============== SCROLL DOWN ===============*/

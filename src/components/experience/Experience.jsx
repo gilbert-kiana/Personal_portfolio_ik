@@ -23,7 +23,7 @@ const Experience = () => {
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
                 <h4>CSS</h4>
-                <small className="text__light">Intermediate</small>
+                <small className="text__light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
@@ -36,14 +36,14 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Bootstarp</h4>
+                <h4>Bootstrap</h4>
                 <small className="text__light">Experienced</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Tailwind</h4>
+                <h4>Wordpress</h4>
                 <small className="text__light">Experienced</small>
               </div>
             </article>
@@ -69,14 +69,14 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>MangoDB</h4>
+                <h4>MongoDB</h4>
                 <small className="text__light">Intermediate</small>
               </div>
             </article>
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>PHP</h4>
+                <h4>Git</h4>
                 <small className="text__light">Intermediate</small>
               </div>
             </article>
@@ -90,7 +90,7 @@ const Experience = () => {
             <article className="experience__details">
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-                <h4>Python</h4>
+                <h4>Data Structures</h4>
                 <small className="text__light">Experienced</small>
               </div>
             </article>

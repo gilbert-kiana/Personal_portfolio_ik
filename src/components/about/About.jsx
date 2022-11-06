@@ -32,14 +32,16 @@ const About = () => {
             <article className="about__card">
               <VscFolderLibrary className="about__icon" />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>20+ Completed</small>
             </article>
           </div>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, unde
-            corrupti? Vitae est odit perferendis asperiores ex, ab quod,
-            inventore nisi adipisci eius soluta ea veniam esse, consequatur
-            animi mollitia?
+            I specialize in creating websites for individuals and small
+            businesses. You shouldn’t have to settle for cheap solutions or
+            generic templates. I provide custom designs at afforable prices.
+            Frequently your website is the first impression your customers will
+            get, so make sure it’s a good one.Take a look at my portfolio below,
+            if you think I’d be a good match send me an email.
           </p>
           <a href="#contact" className="btn btn-primary">
             Let's Talk

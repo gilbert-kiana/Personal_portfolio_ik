@@ -4,6 +4,7 @@ import MeAbout from "../../assets/me-about.jpg";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import CV from "../../assets/Gilbert_Intabo_CV.pdf";
 
 const About = () => {
   return (
@@ -41,11 +42,20 @@ const About = () => {
             generic templates. I provide custom designs at afforable prices.
             Frequently your website is the first impression your customers will
             get, so make sure it’s a good one.Take a look at my portfolio below,
-            if you think I’d be a good match send me an email.
+            if you think I’d be a good match send me an email.{" "}
+            <p>
+              If you want a more technical look at my skills, you can download
+              my CV
+            </p>
           </p>
-          <a href="#contact" className="btn btn-primary">
-            Let's Talk
-          </a>
+          <div className="cta">
+            <a href={CV} download className="btn btn-primary">
+              Download CV
+            </a>
+            <a href="#contact" className="btn btn-primary">
+              Let's Talk
+            </a>
+          </div>
         </div>
       </div>
     </section>

@@ -1,10 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
 import { RiTwitterLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      "service_qzfqjwa",
+      "template_3xg64z9",
+      form.current,
+      "Q4zW6JnHN135e_wp8"
+    );
+    e.target.reset().then(
+      (result) => {
+        alert("Message sent, I'll get back to you soon", result.text);
+      },
+      (error) => {
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <section id="contact">
       <h5>Get in Touch</h5>
@@ -23,22 +45,22 @@ const Contact = () => {
             <RiTwitterLine className="contact__option-icon" />
 
             <h4>Twitter</h4>
-            <h5>Twitter</h5>
-            <a href="https://facebook.com" target="_blank">
-              Send a message
+            <h5>Kiana_Kaiser</h5>
+            <a href="https://twitter.com/gilbert_intabo" target="_blank">
+              Tweet me
             </a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
-            <h5>+123-456-7890</h5>
+            <h5>+254 757028907</h5>
             <a href="https://www.whatsapp.com" target="_blank">
-              Send a message
+              Text
             </a>
           </article>
         </div>
         {/* END OF CONTACT OPTION */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"

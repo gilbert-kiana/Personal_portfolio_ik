@@ -54,27 +54,22 @@ header {
   border-radius: 50%;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .me {
-    width: 12rem;
-    height: 12rem;
-    left: calc(30%);
-    margin-top: -8rem;
-    border-radius: 50%;
-    position: absolute;
-    top: 95%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
-@media (max-width: 480px) {
+@media screen and (max-width: 480px) {
   .me {
-    padding: 0rem 0rem 0rem 0rem;
-    width: 9rem;
-    height: 9rem;
-    left: calc(30%);
-
+    width: 20rem;
+    height: 20rem;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     margin-top: -7.5rem;
-    border-radius: 50%;
   }
 }
 

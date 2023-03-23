@@ -16,13 +16,13 @@ const Testimonials = () => {
       avater: Avtr1,
       name: "Madelein albright",
       review:
-        "Working with Gilbert was simple. My favorite part was how he managed to get my exact needs in the website.Would recommend him to anyone",
+        "Working with Gilbert was simple. My favorite part was how he managed to get my exact needs in the website.Would recommend him to anyone.",
     },
     {
       avater: Avtr2,
       name: "Obed Tinega",
       review:
-        " Gilbert was able to deliver the site within the strict deadlines as expected.Will definately continue working with him",
+        "Working with Gilbert was a fantastic experience. He delivered our website within strict deadlines and exceeded our expectations. He is a skilled and reliable web developer who pays great attention to detail and communicates clearly. We will definitely continue working with him and highly recommend him to others. Thank you, Gilbert, for your outstanding work!",
     },
   ];
 
@@ -41,7 +41,7 @@ const Testimonials = () => {
           return (
             <SwiperSlide key={index} className="testimonial">
               <div className="client__avatar">
-                <img src={avater} alt="client image" />
+                <img src={avater} alt="client   " />
               </div>
               <h5 className="client__name">{name}</h5>
               <small className="client__review">{review}</small>

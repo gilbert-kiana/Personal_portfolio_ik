@@ -42,15 +42,16 @@ header {
 
 .me {
   background: linear-gradient(var(--color-primary), transparent);
-  width: 25rem;
-  height: 25rem;
+  width: 22rem;
+  height: 22rem;
   position: absolute;
-  left: calc(80% - 11rem);
+  left: calc(80% - 6rem);
   margin-top: -10rem;
   border-radius: 24 rem 0rem 0 0;
   overflow: hidden;
   padding: 0rem 0rem 0rem 0rem;
   z-index: -1;
+  border-radius: 50%;
 }
 
 /*=============== SCROLL DOWN ===============*/

@@ -13,11 +13,12 @@ export const App = () => {
   return (
     <>
       <Header />
+
       <Nav />
       <About />
+      <Portfolio />
       <Experience />
       <Services />
-      <Portfolio />
       <Testimonials />
       <Contact />
       <Footer />

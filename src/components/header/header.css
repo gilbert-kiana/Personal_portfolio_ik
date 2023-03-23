@@ -40,46 +40,13 @@ header {
 
 /*=============== ME ===============*/
 
-.me {
-  background: linear-gradient(var(--color-primary), transparent);
-  width: 25rem;
-  height: 25rem;
-  position: absolute;
-  left: calc(80% - 2rem);
-  margin-top: -10rem;
-  border-radius: 2 rem 0rem 0 0;
-  overflow: hidden;
-  padding: 0rem 0rem 0rem 0rem;
-  z-index: -1;
-  border-radius: 50%;
-}
-
-@media screen and (max-width: 768px) {
-  .me {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .me {
-    width: 20rem;
-    height: 20rem;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin-top: -7.5rem;
-  }
-}
-
 /*=============== SCROLL DOWN ===============*/
 
 .scroll__down {
   position: absolute;
   right: 1.3rem;
   bottom: 5rem;
-  transform: rotate(90deg);
+
   font-weight: 200;
   font-size: 0.9rem;
 }

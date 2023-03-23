@@ -42,23 +42,47 @@ header {
 
 .me {
   background: linear-gradient(var(--color-primary), transparent);
-  width: 22rem;
-  height: 22rem;
+  width: 25rem;
+  height: 25rem;
   position: absolute;
-  left: calc(80% - 6rem);
+  left: calc(80% - 2rem);
   margin-top: -10rem;
-  border-radius: 24 rem 0rem 0 0;
+  border-radius: 2 rem 0rem 0 0;
   overflow: hidden;
   padding: 0rem 0rem 0rem 0rem;
   z-index: -1;
   border-radius: 50%;
 }
 
+@media (max-width: 768px) {
+  .me {
+    width: 12rem;
+    height: 12rem;
+    left: calc(30%);
+    margin-top: -8rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 95%;
+  }
+}
+
+@media (max-width: 480px) {
+  .me {
+    padding: 0rem 0rem 0rem 0rem;
+    width: 9rem;
+    height: 9rem;
+    left: calc(30%);
+
+    margin-top: -7.5rem;
+    border-radius: 50%;
+  }
+}
+
 /*=============== SCROLL DOWN ===============*/
 
 .scroll__down {
   position: absolute;
-  right: -2.3rem;
+  right: 1.3rem;
   bottom: 5rem;
   transform: rotate(90deg);
   font-weight: 200;
